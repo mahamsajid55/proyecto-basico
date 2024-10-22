@@ -1,0 +1,127 @@
+<style>
+     /*   reset*/
+
+*{padding: 0;
+          margin: 0;}
+          a {text-decoration: none;
+          color: black;}
+     ul {list-style: none;
+         margin-right: 0;}
+    /*  Codigo pagina en desktop   */
+
+    header,nav,main,footer {width: 80%;
+                           margin: 0 auto;}
+
+    header{
+      min-height: 15rem; 
+        background-color: pink;}
+
+    nav{width: 80%;
+        min-height: 4rem;
+        background-color: orange;}
+
+    main{width: 80%;
+        min-height: 20rem;
+        background-color: lightblue;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;}
+
+    footer{width: 80%;
+        min-height: 7rem;
+        background-color: chartreuse;}
+
+    .ponerBorde{border: 0.3rem solid black;}
+
+    main div {width: 30%;
+        min-height: 5rem;
+        background-color: lightgray;
+        border: 0.2rem solid red;}
+
+    .izda{background-color: rgba(101, 187, 187, 0.555);}
+    .dcha{background-color: rgba(106, 202, 9, 0.521);}
+
+    main div a {font-size: 1.2rem;
+                color: brown;
+               font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            
+
+
+
+             }
+             
+        nav  ul {border: 0.1rem solid blue ;
+            min-height: 7rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;}
+
+
+
+
+
+         nav ul li{width: 8rem;
+                 height: 3.5rem;
+                background-color: burlywood;
+
+
+              /* border: 0.1 solid green;  */
+              margin: 0.5rem;
+
+            }
+          ul li a {  font-size: 2rem;
+                    color: rgba(106, 202, 9, 0.521);
+                    display: block;
+                    text-align: center;
+                    padding-top: 0.5rem;
+                    background-color: rgba(101, 187, 187, 0.555);
+                    border-radius: 0.4rem;
+    
+
+     }  
+
+     ul li a:hover { background-color:  rgba(106, 202, 9, 0.521);
+                    color:  rgba(101, 187, 187, 0.555);
+                    transition: 500ms;
+     }
+      header {display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;}
+
+     h1,  h2,  p {width: 50%;
+                  background-color: cadetblue;
+                  margin: 0.2rem;
+                  border: 0.3rem solid green;
+                  text-align: center;}
+         
+           /*  Codigo pagina en tablet   */
+           
+            /*  Codigo pagina en selfphone  */
+
+         @media  screen and  (max-width: 900px;)  {  
+           
+           nav ul {display: flex;
+                flex-direction: column;
+        
+        
+        }
+                main div {width: 45%; }
+
+          body { background-color: aqua;}  
+
+
+
+        }
+         @media only screen and (max-width: 602px)  {
+           
+
+            main div {width: 90%; }
+
+            body {
+              background-color: blue;
+             }
+           }
+         
