@@ -9,19 +9,29 @@
          margin-right: 0;}
     /*  Codigo pagina en desktop   */
 
+  body  {padding-top: 7rem;}
+ 
     header,nav,main,footer {width: 80%;
                            margin: 0 auto;}
 
     header{
-      min-height: 15rem; 
-        background-color: pink;}
+           min-height: 15rem; 
+           background-color: pink;}
 
-    nav{width: 80%;
-        min-height: 4rem;
-        background-color: orange;}
+    nav{
+           min-height: 7rem;
+           background-color: orange;
+           position: fixed;
+           top: 0;
+           left: 10%;
+           
 
-    main{width: 80%;
-        min-height: 20rem;
+
+          }
+
+    main{
+        width: 80%;
+        min-height: 60rem;
         background-color: lightblue;
         display: flex;
         justify-content: space-around;
@@ -34,9 +44,9 @@
     .ponerBorde{border: 0.3rem solid black;}
 
     main div {width: 30%;
-        min-height: 5rem;
-        background-color: lightgray;
-        border: 0.2rem solid red;}
+         min-height: 35rem;
+         background-color: lightgray;
+         border: 0.2rem solid red;}
 
     .izda{background-color: rgba(101, 187, 187, 0.555);}
     .dcha{background-color: rgba(106, 202, 9, 0.521);}
@@ -79,23 +89,49 @@
                     background-color: rgba(101, 187, 187, 0.555);
                     border-radius: 0.4rem;
     
-
      }  
 
      ul li a:hover { background-color:  rgba(106, 202, 9, 0.521);
                     color:  rgba(101, 187, 187, 0.555);
                     transition: 500ms;
      }
-      header {display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-start;}
 
+      header {display: flex;
+
+      }
+      
+      header>div {border: 0.2rem solid red;}
+
+      header>div.logo {width: 25%;}
+
+     header>div.titulo {width: 75%
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       justify-content: flex-start;}
+
+
+                   
      h1,  h2,  p {width: 50%;
                   background-color: cadetblue;
                   margin: 0.2rem;
                   border: 0.3rem solid green;
                   text-align: center;}
+
+
+          section {width: 100%;
+                  background-color: chartreuse;
+                  min-height: 20rem;
+                  border: 0.3 solid red;
+                  display: flex;}
+          article.mapa {width: 40%;
+                      border: 0.1 solid red;}
+          article.form {width: 60%;
+                        background-color: darkgray;
+                        min-height: 20rem;
+                        border: 0.1 solid red;
+          }
+
          
            /*  Codigo pagina en tablet   */
            
@@ -124,4 +160,4 @@
               background-color: blue;
              }
            }
-         
+        
